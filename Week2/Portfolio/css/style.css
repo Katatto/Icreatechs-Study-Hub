@@ -100,7 +100,7 @@ section {
 
 }
 .home h1{
-    font-size: 3rem;
+    font-size: 2.7rem;
     letter-spacing: normal;
     margin-bottom: 10px; /* Add some spacing between elements */
 
@@ -117,18 +117,27 @@ section {
 }
 
 .social-media {
-        border: 1px solid rgb(2, 1, 1);
+    /* border: 1px solid rgb(2, 1, 1); */
     margin-top: 20px;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
 }
 
+.icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* width: 18%; */
+}
 .social-media .icon-wrap {
-    width: 55px;
-    height: 55px;
+    width: 3.2em;
+    height: 3.2em;
     /* background-color: #14397d; */
     background: #585EE9;
     border-radius: 50%;
-    margin-right: 35px;
+    margin: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -142,15 +151,15 @@ section {
 
 
 .social-media .btn {
-    width: 234px;
-    height: 53px;
+   max-width: 234px;
+   width: 70%;
+    max-height: 53px;
     margin-right: 40px;
     border-radius: 10px;
     background-color:  #77b5d9;
-    /* border: 1px solid rgb(2, 1, 1); */
     line-height: 55px;
     text-align: center;
-    font-size: 25px;
+    font-size: 1.4em;
     cursor: pointer;
     transition: all 1s ease-in-out;
 }
@@ -164,7 +173,7 @@ section {
 .icon-wrap a{
     margin-top: 6px;
     color: beige;
-    font-size: 37px;
+    font-size: 2em;
 }
 
 
@@ -185,7 +194,29 @@ section {
 }
 
 
+@media only screen and (max-width: 600px) {
+    
+    .social-media {
+    border: 1px solid rgb(2, 1, 1);
+        flex-wrap: wrap;
+        width: 80%;
+    }
+
+    .social-media .btn {
+     
+        margin-right: 0;
+        
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    
+    html {
+        font-size: 70%;
+    }
 
 
+   
+}
 
 
