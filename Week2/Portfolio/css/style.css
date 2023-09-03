@@ -159,6 +159,10 @@ section {
     transition: all 1s ease-in-out;
 }
 
+.btn a {
+    text-decoration: none;
+}
+
 .social-media .btn:hover{
     transform: scale(1.05);
     box-shadow: 0 5px 15px 0px #77b5d9;
